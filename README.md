@@ -1,6 +1,6 @@
 # Credit Card Fraud Detection using Machine Learning
 
-A capstone project by Daniel Pérez Hernández, current Analyst at Deloitte.
+A capstone project by Daniel Pérez Hernández. Current Analyst at Deloitte and a machine learning enthusiast.
 
 Most current update: March 24, 2023.
 
