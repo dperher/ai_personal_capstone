@@ -62,7 +62,7 @@ It is important to keep in mind the first step to avoid data leakage after split
 
 Having split and normalize the test and train sets, we need to deal with the imbalanced nature of our dataset. The SMOTE (Synthetic Minority Oversampling Technique) method will be used, since with it new instances are synthesized from preexisting data using k-nearest neighbor to select a random nearest neighbor, and a synthetic instance is created randomly in feature space. It is basicaly an oversampling method, meaning there will be an increase the minority class' row quantity.
 
-<img src="https://miro.medium.com/v2/resize:fit:725/0*FeIp1t4uEcW5LmSM.png" width="1100" height="500"/>
+<img src="https://miro.medium.com/v2/resize:fit:725/0*FeIp1t4uEcW5LmSM.png" width="1000" height="500"/>
 
 According to the article Research on expansion and classification of imbalanced data based on SMOTE algorithm (Wang, et.al, 2021), the authors affirm "SMOTE algorithm can improve the classification effect of imbalanced data by randomly generating new minority sample points to increase the imbalance rate to a certain extent.". This is the reason why it will be applied to both our training and test sets.
 
