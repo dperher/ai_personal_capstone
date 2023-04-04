@@ -59,4 +59,4 @@ Defining X and y: Target variable is the column called ‘Class’, where 1 repr
  SMOTE (Synthetic Minority Oversampling Technique) method: example using original data
 In SMOTE new instances are synthesized from preexisting data using k-nearest neighbor to select a random nearest neighbor, and a synthetic instance is created randomly in feature space. It is basicaly an oversampling method, meaning there will be an increase the minority class' row quantity.
 
-<img src="https://images.app.goo.gl/j2tT5wDG39TM7NkE6" width="400" height="400"/>
+<img src="https://miro.medium.com/v2/resize:fit:725/0*FeIp1t4uEcW5LmSM.png" width="400" height="400"/>
