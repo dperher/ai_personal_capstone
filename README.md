@@ -8,7 +8,20 @@ Most current update: April 03, 2023.
 
 Foe 6 months, Deloitte's AI Academy has provided me basic knowledge regarding the fascinanting world of data analysis and artifical intelligence. From basic Python functions, through SQL queries and Pandas data manipulation, to advanced mathematical models that employ any kind of data (structured, unestructured) to classify or predict behaviours previously unknown to us and that now are essential at any workplace where decision-making takes place.
 
+<img src="https://datascientest.com/es/wp-content/uploads/sites/7/2020/12/1-1024x576.jpg" width="900" height="400"/>
+
 This is a summary and application of all these knowledge and techniques with a clear purpose: extract and analyze data, generate information from it and build up  machine learning-powered models that can give solution to personal or business needs, leaning towards scalable automation.
+
+## About the files used
+
+Six files can be found within this repository:
+
+1.  A PPTX file called `fraud_detection.pptx`.
+2.  A PDF version of the pptx file, also called `fraud_detection.pdf`.
+3.  A Jupyter Notebook called `fraud_detection.ipynb` where all the code has been written, aongside displayed plots.
+4.  A PDF called `Capstone_Project_Proposal_Template.pdf` where the Capstone proposal is available.
+5.  A `README.md` file where all of this information is displayed and ready for its lecture.
+6.  A `.gitignore` file.
 
 ## About the dataset
 
@@ -53,7 +66,10 @@ Having split and normalize the test and train sets, we need to deal with the imb
 
 According to the article Research on expansion and classification of imbalanced data based on SMOTE algorithm (Wang, et.al, 2021), the authors affirm "SMOTE algorithm can improve the classification effect of imbalanced data by randomly generating new minority sample points to increase the imbalance rate to a certain extent.". This is the reason why it will be applied to both our training and test sets.
 
-The article can be consulted on the following URL link: https://www.nature.com/articles/s41598-021-03430-5
+The article can be consulted on the following URL link: https://www.nature.com/articles/s41598-021-03430-5, and the steps to import the `SMOTE()` function is:
+
+*  `%pip install -U imbalanced-learn`
+*  `from imblearn.over_sampling import SMOTE`
 
 ## The machine learning models
 
