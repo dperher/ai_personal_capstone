@@ -50,3 +50,21 @@ It is important to keep in mind the first step to avoid data leakage after split
 Having split and normalize the test and train sets, we need to deal with the imbalanced nature of our dataset. The SMOTE (Synthetic Minority Oversampling Technique) method will be used, since with it new instances are synthesized from preexisting data using k-nearest neighbor to select a random nearest neighbor, and a synthetic instance is created randomly in feature space. It is basicaly an oversampling method, meaning there will be an increase the minority class' row quantity.
 
 <img src="https://miro.medium.com/v2/resize:fit:725/0*FeIp1t4uEcW5LmSM.png" width="1100" height="500"/>
+
+According to the article Research on expansion and classification of imbalanced data based on SMOTE algorithm (Wang, et.al, 2021), the authors affirm "SMOTE algorithm can improve the classification effect of imbalanced data by randomly generating new minority sample points to increase the imbalance rate to a certain extent.". This is the reason why it will be applied to both our training and test sets.
+
+The article can be consulted on the following URL link: https://www.nature.com/articles/s41598-021-03430-5
+
+## The machine learning models
+
+There are several ML problems that require classification solutions to distinguish desired categories, in this case if a transaction is a fraud or not. For this capstone project, two famous models were chosen: `LogisticRegression()` and `RandomForestClassifier()`, both functions called through `from sklearn.linear_model import LogisticRegression` and `from sklearn.ensemble import RandomForestClassifier`
+
+## Metrics to compare performance
+
+The authors recommend measuring accuracy through the Area Under the Precision-Recall Curve, given the unbalanced nature of the dataset. The rest of the traditional metrics will be incorporated (precision, F1-score, recall), as well as a confusion matrix to see how well the models classified data.
+
+The following code snippets are used to call the metric functions from `sklearn`:
+
+-  `from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score`
+-  `from sklearn.metrics import roc_curve, roc_auc_score`
+-  `from sklearn.metrics import confusion_matrix`
