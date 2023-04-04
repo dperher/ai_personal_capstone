@@ -22,6 +22,8 @@ Once downloaded, the data from the downloaded file `creditcard.csv` will be obta
 
 Purchases made through websites or in situ stores represent an imminent danger to credit/debit cardholders throughout the world, given their exposure to cybernetic dangers that may generate unrecognized fraud transactions. Thus, it is important to generate a trustworthy AI model that detects potential threats based on transaction datasets collected on a daily-basis routine.
 
+<img src="https://www.wealthandfinance-news.com/wp-content/uploads/2021/05/Banking-Fraud.jpg" width="900" height="400"/>
+
 This applies particularly to the finance industry, with an emphasis on the fraud monitoring techniques that are implemented on a bigger scale at banks worldwide.
 
 The main focus of this project is to demonstrate how a bank can detect frauds based on your daily financial activities.
@@ -39,24 +41,12 @@ But from all characteristics, the most important are:
 
 ## Data preparation
 
-Once we know what kind of data we are dealing with, we will divide our dataset in features and label (X and y, respectively).
+Once we know what kind of data we are dealing with, we will divide our dataset in features and label (X and y, respectively). This is used through the `train_test_split()` function obtained through `from sklearn.model_selection import train_test_split`.
 
-It is important to keep in mind the first step to avoid data leakage: normalize the data using 
-
-
-
-Before preparing our data for it to be input of a machine learning model, first we need to split it in training and test sets. This is used through the `train_test_split()` function obtained through `from sklearn.model_selection import train_test_split`.
-
-
-standarize our data.
-
-Once we have analyzed our data, it is necessary to split it into training, validation and test data sets. These later will be standarized and later resampled in order to use them to train, fit and compare our ML models.
-
-Defining X and y: Target variable is the column called ‘Class’, where 1 represents fraud and 0 the opposite. We will predict if a transaction is fraud or not, so the output is a categorical variable.
+It is important to keep in mind the first step to avoid data leakage after spliting our data: normalizing it using `StandardScaler()` through `from sklearn.preprocessing import StandardScaler`. 
 
 ## Treating imbalanced data
 
- SMOTE (Synthetic Minority Oversampling Technique) method: example using original data
-In SMOTE new instances are synthesized from preexisting data using k-nearest neighbor to select a random nearest neighbor, and a synthetic instance is created randomly in feature space. It is basicaly an oversampling method, meaning there will be an increase the minority class' row quantity.
+Having split and normalize the test and train sets, we need to deal with the imbalanced nature of our dataset. The SMOTE (Synthetic Minority Oversampling Technique) method will be used, since with it new instances are synthesized from preexisting data using k-nearest neighbor to select a random nearest neighbor, and a synthetic instance is created randomly in feature space. It is basicaly an oversampling method, meaning there will be an increase the minority class' row quantity.
 
-<img src="https://miro.medium.com/v2/resize:fit:725/0*FeIp1t4uEcW5LmSM.png" width="400" height="400"/>
+<img src="https://miro.medium.com/v2/resize:fit:725/0*FeIp1t4uEcW5LmSM.png" width="900" height="400"/>
