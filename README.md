@@ -35,7 +35,7 @@ Once downloaded, the data from the downloaded file `creditcard.csv` will be obta
 
 Purchases made through websites or in situ stores represent an imminent danger to credit/debit cardholders throughout the world, given their exposure to cybernetic dangers that may generate unrecognized fraud transactions. Thus, it is important to generate a trustworthy AI model that detects potential threats based on transaction datasets collected on a daily-basis routine.
 
-<img src="https://www.wealthandfinance-news.com/wp-content/uploads/2021/05/Banking-Fraud.jpg" width="900" height="400"/>
+<img src="https://www.wealthandfinance-news.com/wp-content/uploads/2021/05/Banking-Fraud.jpg" width="800" height="400"/>
 
 This applies particularly to the finance industry, with an emphasis on the fraud monitoring techniques that are implemented on a bigger scale at banks worldwide.
 
