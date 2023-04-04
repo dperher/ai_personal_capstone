@@ -25,3 +25,14 @@ Purchases made through websites or in situ stores represent an imminent danger t
 This applies particularly to the finance industry, with an emphasis on the fraud monitoring techniques that are implemented on a bigger scale at banks worldwide.
 
 The main focus of this project is to demonstrate how a bank can detect frauds based on your daily financial activities.
+
+## Knowing our data
+
+This dataset consists of numerical input variables only. Most features (V1 to V28) are the result of PCA transformation of the original features due to confidentiality issues; the rest (‘Time’, ‘Amount’ and 'Class') haven’t been modified at all.
+
+There are non-null values in this dataset, which means no method to delete or fill N/A values with mean (for numerical variables) or mode (for ctageorical variables) are necessary at all. 29 features consist of float-type data and only the 'Class' category is an integer, given the 1 or 0 values that identify if a transaction is an authentic fraud or not.
+
+But from all characteristics, the most important are:
+
+1. There is a confirmed unbalanced phenomenon present in our data, and the affected category is non other that "Fraud"
+2. By observing the correlation matrix, it becomes evident than most of the features (V1 to V28) have basically a null correlation between them. However, there is a modest linear correlation between V1 to V28 variables and Time, Ammount and Class, though most of the correlation values are positive (not exceeding the 0.40 treshold) and the rest negative (not exceeding the -0.60 treshold).
