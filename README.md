@@ -34,5 +34,29 @@ There are non-null values in this dataset, which means no method to delete or fi
 
 But from all characteristics, the most important are:
 
-1. There is a confirmed unbalanced phenomenon present in our data, and the affected category is non other that "Fraud"
-2. By observing the correlation matrix, it becomes evident than most of the features (V1 to V28) have basically a null correlation between them. However, there is a modest linear correlation between V1 to V28 variables and Time, Ammount and Class, though most of the correlation values are positive (not exceeding the 0.40 treshold) and the rest negative (not exceeding the -0.60 treshold).
+1.   There is a confirmed unbalanced phenomenon present in our data, and the affected category is non other that "Fraud"
+2.   By observing the correlation matrix, it becomes evident than most of the features (V1 to V28) have basically a null correlation between them. However, there is a modest linear correlation between V1 to V28 variables and Time, Ammount and Class, though most of the correlation values are positive (not exceeding the 0.40 treshold) and the rest negative (not exceeding the -0.60 treshold).
+
+## Data preparation
+
+Once we know what kind of data we are dealing with, we will divide our dataset in features and label (X and y, respectively).
+
+It is important to keep in mind the first step to avoid data leakage: normalize the data using 
+
+
+
+Before preparing our data for it to be input of a machine learning model, first we need to split it in training and test sets. This is used through the `train_test_split()` function obtained through `from sklearn.model_selection import train_test_split`.
+
+
+standarize our data.
+
+Once we have analyzed our data, it is necessary to split it into training, validation and test data sets. These later will be standarized and later resampled in order to use them to train, fit and compare our ML models.
+
+Defining X and y: Target variable is the column called ‘Class’, where 1 represents fraud and 0 the opposite. We will predict if a transaction is fraud or not, so the output is a categorical variable.
+
+## Treating imbalanced data
+
+ SMOTE (Synthetic Minority Oversampling Technique) method: example using original data
+In SMOTE new instances are synthesized from preexisting data using k-nearest neighbor to select a random nearest neighbor, and a synthetic instance is created randomly in feature space. It is basicaly an oversampling method, meaning there will be an increase the minority class' row quantity.
+
+<img src="https://images.app.goo.gl/j2tT5wDG39TM7NkE6" width="400" height="400"/>
