@@ -16,4 +16,4 @@ The collected dataset consists of a CVS type file with transactions made by cred
 
 Data was obtained data through a direct download form the Kaggle website, result of an extensive search of machine learning datasets. The web link to this dataset is: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
-Once downloaded, the data from the downloaded file 'creditcard.csv' will be obtained via Python 'pandas' library and use the 'read_csv()' function.
+Once downloaded, the data from the downloaded file `creditcard.csv` will be obtained via Python `pandas` library and use the `read_csv()` function.
